@@ -1,0 +1,201 @@
+/* 1. Universal Selector
+   Selects every element on the webpage */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Element Selector
+   Selects all <p> elements */
+p {
+    font-size: 18px;
+}
+
+/* 3. Class Selector
+   Selects elements having class="skills" */
+.skills {
+    color:brown;
+}
+
+/* 4. ID Selector
+   Selects the element having id="intro" */
+#intro {
+    background-color:aquamarine;
+    padding: 20px;
+}
+
+/* 5. Grouping Selector
+   Selects multiple elements at the same time */
+
+h1,
+h2,
+button {
+    font-family: Arial, sans-serif;
+}
+
+/* 6. Descendant Selector
+   Selects all <p> elements inside .selector-demo */
+.selector-demo p {
+    color: green;
+}
+
+/* 7. Child Selector (>)
+   Selects only <p> elements that are direct children of .selector-demo */
+.selector-demo > p {
+    background-color: lightyellow;
+}
+
+/* 8. Adjacent Sibling Selector (+)
+   Selects the <p> immediately after an <h2> */
+h2 + p {
+    font-weight: bold;
+}
+
+/* 9. General Sibling Selector (~)
+   Selects all <p> elements that come after an <h2>
+   and share the same parent */
+h2 ~ p {
+    margin-bottom: 10px;
+}
+
+/* 10. Attribute Selector
+   Selects links that have target="_blank" */
+a[target="_blank"] {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Main container */
+.container {
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+
+/* Main heading */
+.container h1 {
+    text-align: center;
+}
+
+/* Introduction paragraph */
+.intro {
+    text-align: center;
+}
+
+/* Container for all cards */
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Individual card */
+.card {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    flex: 1;
+}
+
+/* Card heading */
+.card h2 {
+    margin-bottom: 10px;
+}
+
+/* Card paragraph */
+.card p {
+    margin-bottom: 20px;
+}
+
+/* Button */
+.card button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+/* =================================
+   TASK 2 - CSS UNITS
+   ================================= */
+
+
+/* % - Width of the main container */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+
+/* rem - Font size of the main heading */
+.container h1 {
+    font-size: 2rem;
+}
+
+
+/* % - Cards container width */
+.cards {
+    width: 100%;
+}
+
+
+/* em - Padding inside each card */
+.card {
+    padding: 1.5em;
+    
+    /* px - Border size */
+    border: 2px solid #333;
+}
+
+
+/* rem - Paragraph font size */
+.card p {
+    font-size: 1rem;
+}
+
+
+/* em - Button padding */
+.card button {
+    padding: 0.7em 1.5em;
+}
+
+
+/* vh - Minimum height of the main container */
+.container {
+    min-height: 50vh;
+}
+
+
+/* vw - Responsive heading */
+.card h2 {
+    font-size: 3vw;
+}
+
+/* Task 2 - Card */
+
+.card {
+    width: 50%;
+    padding: 1.5em;
+    border: 2px solid #333;
+    margin: 20px auto;
+}
+
+
+
+.card p {
+    font-size: 1rem;
+}
+
+.card button {
+    padding: 0.7em 1.5em;
+}
+
+
+
+
+
+
+
